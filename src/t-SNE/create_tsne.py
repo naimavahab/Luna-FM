@@ -68,7 +68,7 @@ plt.legend(
     bbox_to_anchor=(1.05, 1),
     loc="upper left",
     markerscale=2,
-    fontsize=9
+    fontsize=11
 )
 
 plt.tight_layout()
