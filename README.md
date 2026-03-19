@@ -107,7 +107,7 @@ FlashAttention v2 and v3 are used to accelerate attention operations.
 
 | Parameter | Value |
 |----------|------|
-| Training steps | 30,000 |
+| Training steps | 300,000 |
 | Batch size | 96 |
 | Learning rate | 5 × 10⁻⁵ |
 | Optimiser | AdamW |
