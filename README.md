@@ -61,7 +61,9 @@ to create a new BPE tokeniser from a fasta file run :
 ```bash
 nohup python src/tokeniser/train_Bpe_tokeniser.py   --corpus final.fasta   --out_dir ./tokenizer_bpe_4k_final   --vocab_size 4096   --model_length 2000 > log4k.log 2>&1 & 
 
+###
 to create a new sentence-piece unigram tokeniser from a fasta file run :
+
 ```bash
 python train_sentencepiece_unigram_from_corpus.py \
   --corpus corpus.txt \
@@ -71,7 +73,7 @@ python train_sentencepiece_unigram_from_corpus.py \
   --input_sentence_size 2000000 \
   --max_sentence_length 2048
 
-
+###
 ---
 
 ## Model Architecture
