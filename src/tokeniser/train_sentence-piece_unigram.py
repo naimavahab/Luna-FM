@@ -7,6 +7,16 @@
 # - max_sentence_length: cap very long RNAs (e.g., 2048)
 # - hard_vocab_limit=False: avoid crash if exact vocab can't be met
 # - sanity check + preview before training
+'''
+python train_sentencepiece_unigram_from_corpus.py \
+  --corpus corpus.txt \
+  --out_dir tokenizer_unigram_8k \
+  --model_prefix rna_unigram_8k \
+  --vocab_size 8000 \
+  --input_sentence_size 2000000 \
+  --max_sentence_length 2048
+'''
+
 
 import os
 import argparse

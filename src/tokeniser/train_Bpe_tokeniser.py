@@ -1,7 +1,7 @@
 # Train HuggingFace-compatible BPE tokenizer (tokenizers.SentencePieceBPETokenizer)
 # from an EXISTING corpus.txt (streaming, huge-corpus safe).
 
-# nohup python train_Bpe_tokeniser.py   --corpus ../Pretrain/final.fasta   --out_dir ./tokenizer_bpe_4k_final   --vocab_size 4096   --model_length 2000 > log4k.log 2>&1 & 
+# nohup python train_Bpe_tokeniser.py   --corpus final.fasta   --out_dir ./tokenizer_bpe_4k_final   --vocab_size 4096   --model_length 2000 > log4k.log 2>&1 & 
 
 import os
 import argparse

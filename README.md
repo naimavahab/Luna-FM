@@ -57,6 +57,21 @@ Default configuration uses a vocabulary size of 4096 tokens.
 
 The BPE tokeniser captures recurring RNA patterns while maintaining flexibility for rare sequences.
 
+to create a new BPE tokeniser from a fasta file run :
+```bash
+nohup python src/tokeniser/train_Bpe_tokeniser.py   --corpus final.fasta   --out_dir ./tokenizer_bpe_4k_final   --vocab_size 4096   --model_length 2000 > log4k.log 2>&1 & 
+
+to create a new sentence-piece unigram tokeniser from a fasta file run :
+```bash
+python train_sentencepiece_unigram_from_corpus.py \
+  --corpus corpus.txt \
+  --out_dir tokenizer_unigram_8k \
+  --model_prefix rna_unigram_8k \
+  --vocab_size 8000 \
+  --input_sentence_size 2000000 \
+  --max_sentence_length 2048
+
+
 ---
 
 ## Model Architecture
@@ -99,7 +114,32 @@ FlashAttention v2 and v3 are used to accelerate attention operations.
 
 ---
 
+---
+
+## Usage
+
+### Pretraining
+
+Run the pretraining script with BPE tokenisation:
+
+```bash
+python src/pretrain/train_BPE.py \
+  --fasta_file final.fasta \
+  --dataset_dir rna_Seqs \
+  --tokenizer_path ../tokeniser/tokenizer_bpe_4k_final \
+  --tokenized_dir tokenised_rna_BPE4k \
+  --output_dir ./RNA_FM_models \
+  --save_model_path Model_RNA_BPE4k \
+  --max_len 128 \
+  --num_train_epochs 20 \
+  --per_device_train_batch_size 96 \
+  --gradient_accumulation_steps 2 \
+  --learning_rate 5e-5 \
+  --fp16
+
 ## Downstream Tasks
+Codes available under /src/finetune 
+Data available under src/data
 
 ### mRNA vs lncRNA Classification
 
