@@ -1,4 +1,9 @@
-![Luna-FM pipeline](figures/luna_pipeline.png)# Luna-FM (BPE): RNA Foundation Model for Long-Sequence Understanding
+<p align="center">
+  <img src="figures/luna_pipeline.png" width="800">
+</p>
+
+
+# Luna-FM (BPE): RNA Foundation Model for Long-Sequence Understanding
 
 ---
 
