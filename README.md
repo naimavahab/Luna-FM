@@ -1,7 +1,4 @@
-<p align="center">
-  <img src="figures/luna_pipeline.png" width="800">
-</p>
-
+<img src="https://gitlab.com/<namespace>/<project>/-/raw/main/figures/luna_pipeline.png" width="800">
 
 # Luna-FM (BPE): RNA Foundation Model for Long-Sequence Understanding
 
