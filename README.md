@@ -9,6 +9,7 @@
 Luna-FM (BPE) is a large-scale RNA foundation model designed to model long and complex RNA sequences using subword tokenisation and an optimised BERT-style transformer encoder.
 
 Unlike nucleotide-level RNA models, Luna-FM uses Byte Pair Encoding (BPE) to compress RNA sequences into biologically meaningful subunits such as motifs and conserved regions. This enables efficient modelling of long transcripts while preserving functional signals.
+Hugging face repos are available as : NaimaVahab/luna-fm_BPE_2k, NaimaVahab/luna-fm_BPE_4k, NaimaVahab/luna-fm_BPE_15k
 
 
 
