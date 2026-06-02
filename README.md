@@ -238,6 +238,5 @@ Luna-FM provides a scalable and efficient framework for RNA sequence modelling b
 @article{luna_fm_2026,
   title={Luna-FM: Subword-based RNA Foundation Model for Long-Sequence Understanding},
   author={Naima Vahab,Estrid He,Tabinda Sarwar and Sonika Tyagi},
-  journal={ Bioinformatics (Oxford University Press) },
   year={2026}
 }
